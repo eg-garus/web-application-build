@@ -1,0 +1,54 @@
+// Header Styles - Unified Design System
+
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: var(--header-height);
+  background: var(--bg-header);
+  box-shadow: var(--shadow-md);
+  padding: 0 var(--spacing-6);
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.5px;
+  margin-right: var(--spacing-8);
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+// Navigation buttons
+button[mat-button] {
+  font-weight: var(--font-weight-medium);
+  text-transform: none;
+  letter-spacing: 0.3px;
+  margin: 0 var(--spacing-1);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 576px) {
+  mat-toolbar {
+    padding: 0 var(--spacing-3);
+  }
+
+  .title {
+    font-size: var(--font-size-lg);
+    margin-right: var(--spacing-4);
+  }
+
+  button[mat-button] {
+    font-size: var(--font-size-sm);
+    padding: 0 var(--spacing-2);
+    margin: 0;
+  }
+}

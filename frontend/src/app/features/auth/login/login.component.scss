@@ -1,0 +1,76 @@
+// Login Component Styles - Unified Design System
+
+// Use global .page-container and .card classes
+
+.page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - var(--header-height));
+  padding: var(--spacing-4);
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  padding: var(--spacing-8);
+  background: var(--bg-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-6);
+  color: var(--text-primary);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.full-width {
+  width: 100%;
+}
+
+// Material button styling
+button[mat-raised-button] {
+  width: 100%;
+  padding: var(--spacing-3) var(--spacing-6);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-md);
+  margin-top: var(--spacing-2);
+}
+
+.text-center {
+  text-align: center;
+  margin-top: var(--spacing-6);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+
+  a {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 576px) {
+  .card {
+    padding: var(--spacing-6);
+  }
+
+  h2 {
+    font-size: var(--font-size-xl);
+  }
+}

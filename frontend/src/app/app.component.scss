@@ -1,0 +1,29 @@
+// App Component Styles - Unified Design System
+// Most styles are now in global styles.scss
+
+// Main layout
+main {
+  min-height: calc(100vh - var(--header-height));
+  background-color: var(--bg-primary);
+}
+
+// Page container for content
+.page-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-6);
+  width: 100%;
+}
+
+// Responsive adjustments
+@media (max-width: 992px) {
+  .page-container {
+    padding: var(--spacing-4);
+  }
+}
+
+@media (max-width: 576px) {
+  .page-container {
+    padding: var(--spacing-3);
+  }
+}
